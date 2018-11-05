@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Raleway:900');
+
+body {
+    background: #eeeeee;
+}
+
+.wrapper-1200px {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    margin-top: 46px;
+}
+
+header:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+header div > a {
+    font-size: 48px;
+    float: left;
+    font-weight: 900;
+}
+
+header a {
+    font-size: 18px;
+    line-height: 36px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+header ul {
+    float: right;
+}
+
+header li {
+    display: inline-block;
+    margin-left: 36px;
+}
+
+header ul li:last-child:after {
+    content: '';
+    display: inline-block;
+    background: url("image/Menu.png") no-repeat;
+    height: 17px;
+    width: 17px;
+    vertical-align: bottom;
+}
+
+.black-and-white {
+    margin-top: 100px;
+    font-size: 0;
+}
+
+.black-and-white article {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+}
+
+.slider-left-part * {
+    text-align: right;
+}
+
+.slider-left-part h1 {
+    margin-top: 20px;
+    font-size: 150px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+
+.slider-left-part p {
+    margin-top: 20px;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 36px;
+}
+
+.slider-left-part a {
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    float: right;
+    text-decoration: none;
+    color: #e10011;
+}
+
+.slider-right-part {
+    padding-left: 100px;
+}
+
+.slider-right-part img:hover {
+    filter: drop-shadow(0px 0px 20px black);
+}
+
+.slider-buttons {
+    margin: 66px auto;
+    width: 56px;
+}
+
+.slider-buttons div {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.slider-buttons div:nth-child(2) {
+    margin: 0 10px;
+}
+
+.slider-buttons div:hover {
+    background-color: #e10011;
+}
+
+/*
+.black-and-white img{
+    float: right;
+}
+.black-and-white article{
+    float: left;
+}
+.black-and-white article *{
+    float: right;
+    display: block;
+}
+*/

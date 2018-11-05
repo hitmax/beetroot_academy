@@ -1,0 +1,24 @@
+@import "vars";
+@import "header";
+body {
+  margin: 0;
+}
+
+
+main {
+  @include clearFix;
+  .btn {
+    @include button(orange, 250px);
+    &-green {
+      @include button(#0f0, 300px, 16px)
+    }
+    text-decoration: none;
+  }
+  form {
+    button {
+      @include button(orange);
+      border: none;
+    }
+  }
+
+}

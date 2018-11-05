@@ -1,0 +1,69 @@
+.ba-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+[class^=row] {
+    font-size: 0;
+}
+
+[class^=row] [class^=col] {
+    display: inline-block;
+    box-sizing: border-box;
+    border: 15px solid white;
+}
+
+.row-2 .col {
+    width: 50%;
+}
+.height-150 .col {
+    height: 150px;
+}
+
+.row-2:first-of-type.height-150 .col:first-child {
+    background: #AFDFBF;
+}
+.row-2:first-of-type.height-150 .col:last-child {
+    background: #68C5B8;
+}
+.height-320>.col {
+    height: 320px;
+}
+.height-320> .col:first-child {
+    background: #FA688A;
+}
+.row-3 > .col {
+    width: 33.333333%;
+}
+.height-320>.col:last-child {
+    border: none;
+}
+.height-165 .col{
+    height: 170px; /*не совпадение с макетом!*/
+    background: #8A95EF;
+}
+.height-150 .col{
+    height: 150px;
+    background: #FFC569;
+ }
+.height-185 .col {
+    height: 185px;
+    background: #588CC7;
+}
+.height-185 .row-2, .height-185>.col:last-child {
+    border: none;
+}
+.row-6 [class^=col] {
+    width: calc(100% / 6);
+    background: #6652AD;
+}
+.height-145 [class^=col] {
+    height: 145px;
+}
+.row-6 .col-3 {
+    width: 50%;
+}
+.row-6 .col-2{
+    width: calc(100% / 3);
+}
+

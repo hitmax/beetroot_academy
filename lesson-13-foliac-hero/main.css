@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300i,400,700|Playfair+Display:400,700');
+
+@font-face {
+    font-family: 'big_johnregular';
+    src: url('fonts/big_john-webfont.woff2') format('woff2'),
+    url('fonts/big_john-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'slim_joeregular';
+    src: url('fonts/slim_joe-webfont.woff2') format('woff2'),
+    url('fonts/slim_joe-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.section-inner {
+    max-width: 1140px;
+    min-width: 800px;
+    margin: 0 auto;
+}
+
+.hero {
+    position: relative;
+    background-color: #3c4955;
+    height: 650px;
+    z-index: 0;
+}
+
+.hero:after {
+    content: "";
+    background-image: url("image/Background.jpg");
+    opacity: 0.14;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+header {
+    padding-top: 36px;
+    line-height: 100px;
+}
+
+header > a {
+    float: left;
+    width: 176px;
+}
+
+ul {
+    float: right;
+}
+
+header li {
+    display: inline-block;
+}
+
+header li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+}
+
+header li:before {
+    content: '/';
+    color: white;
+    margin: 0 54px;
+}
+
+header li:first-child:before {
+    display: none;
+}
+
+header li:first-child a {
+    margin: 0;
+}
+
+header:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.hero h1 {
+    font-family: 'big_johnregular', sans-serif;
+    margin-top: 154px;
+    font-size: 46px;
+}
+
+.hero h2 {
+    font-family: 'slim_joeregular', sans-serif;
+    font-size: 30px;
+    margin: 30px 0 50px;
+}
+
+.hero h1,
+.hero h2 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hero div > a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #48bf72;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    width: 140px;
+    line-height: 40px;
+    margin: 0 auto;
+    border: 2px solid #48bf72;
+    border-radius: 5px;
+}
+
+a:hover {
+    /*opacity: 0.7;*/
+    text-shadow: 0px 0px 20px ;
+}
+
+/*
+
+
+<!--<ul id="socials">
+    <li>
+        <a href="#" class="twitter"></a>
+    </li>
+    <li>
+        <a href="#" class="linkedin"></a>
+    </li>
+    <li>
+        <a href="#" class="dribble"></a>
+    </li>
+    <li>
+        <a href="#" class="behance"></a>
+    </li>
+</ul>-->
+
+
+
+
+
+#socials li{
+    display: inline-block;
+}
+#socials a {
+    display: block;
+    width: 50px;
+    height: 56px;
+    background: url("image/social.png") no-repeat;
+    margin-right:40px;
+}
+#socials li:last-child a {
+    margin-right: 0;
+}
+
+#socials .linkedin{
+    background-position: -89px 0px;
+}
+#socials .dribble{
+    background-position: -178px 0px;
+}
+#socials .behance{
+    background-position: -267px 0px;
+}*/

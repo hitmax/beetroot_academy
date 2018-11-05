@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #131619;
+    position: relative;
+    height: 100vh;
+}
+main {
+    line-height: 100%;
+    width: 800px;
+    height: 600px;
+    background: url("image/payment-form-background.jpg");
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+section {
+    height: 530px;
+    width: 336px;
+    background-color: white;
+    margin: 35px auto;
+}
+header {
+    position: relative;
+    background-color: #efe5aa;
+    padding: 0 24px;
+}
+.wrapper-float-left{
+    float: left;
+    line-height: 32px;
+}
+header p {
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+header em {
+    text-transform: uppercase;
+    font-size: 10px;
+}
+header span {
+    font-size: 36px;
+    line-height: 72px;
+}
+.wrapper-float-right{
+    float: right;
+
+}
+header:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+form {
+    padding: 26px 24px;
+}
+label, input {
+    display: block;
+}
+form {
+    font-size: 13px;
+    color: #9eabad;
+}
+section a {
+    color: #9eabad;
+}
+form input {
+    border: 1px solid #b4c1c4;
+}
+form input:focus {
+    border: 1px solid #7fcddf;
+}
+form label {
+    line-height: 28px;
+}
+form input:nth-child(2){
+    box-sizing: border-box;
+    width: 100%;
+    height: 44px;
+}
+form label:nth-child(3), form label:nth-child(4) {
+    margin-top: 24px;
+}
+select[name='month'] {
+    width: 176px;
+    height: 44px;
+    box-sizing: border-box;
+}
+select[name='year'] {
+    margin-left: 12px;
+    width: 96px;
+    height: 44px;
+    box-sizing: border-box;
+}
+#CVV {
+    width: 96px;
+    height: 44px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+form span {
+    margin-left: 10px;
+}
+hr{
+    margin: 30px 0;
+    background-color: #e4e7e8;
+    height: 1px;
+    border: none;
+}
+input[type='submit']{
+    width: 100%;
+    height: 48px;
+    background-color: #26b168;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+input[type='reset']{
+    border: none;
+    background-color: white;
+    color: #9eabad;
+    text-decoration: underline;
+    margin: 16px auto;
+}
+

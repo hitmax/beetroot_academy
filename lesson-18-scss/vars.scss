@@ -1,0 +1,29 @@
+$textColor1: red;
+$b1: 1px solid purple;
+$f1: 700 20px/2 Lato, sans-serif;
+
+@mixin hover($bg) {
+  &:hover {
+    background: darken($bg, 10%);
+  }
+}
+
+@mixin button($btnBg, $w: 200px, $fontSize: 18px) {
+  display: block;
+  width: $w;
+  height: 30px;
+  line-height: 30px;
+  background: $btnBg;
+  text-align: center;
+  margin: 5px;
+  font-size: $fontSize;
+  @include hover ($btnBg);
+}
+
+@mixin clearFix {
+  &:before, &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}

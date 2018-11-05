@@ -1,0 +1,84 @@
+.header:before, .header:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.header #logo {
+  float: left;
+  font-size: 20px;
+  color: red;
+  border: 1px solid purple;
+  font: 700 20px/2 Lato, sans-serif;
+}
+.header-nav {
+  float: right;
+}
+.header-nav li {
+  display: inline-block;
+}
+.header-nav a {
+  text-decoration: none;
+}
+.header-nav a.active {
+  color: red;
+}
+.header-nav a.disabled {
+  color: gray;
+}
+.header-nav a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+body {
+  margin: 0;
+}
+
+main:before, main:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+main .btn {
+  display: block;
+  width: 250px;
+  height: 30px;
+  line-height: 30px;
+  background: orange;
+  text-align: center;
+  margin: 5px;
+  font-size: 18px;
+  text-decoration: none;
+}
+main .btn:hover {
+  background: #cc8400;
+}
+main .btn-green {
+  display: block;
+  width: 300px;
+  height: 30px;
+  line-height: 30px;
+  background: #0f0;
+  text-align: center;
+  margin: 5px;
+  font-size: 16px;
+}
+main .btn-green:hover {
+  background: #00cc00;
+}
+main form button {
+  display: block;
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  background: orange;
+  text-align: center;
+  margin: 5px;
+  font-size: 18px;
+  border: none;
+}
+main form button:hover {
+  background: #cc8400;
+}
+
+/*# sourceMappingURL=main.css.map */

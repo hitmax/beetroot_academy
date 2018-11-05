@@ -1,0 +1,50 @@
+section {
+    border: 8px solid black;
+}
+
+main {
+    margin: 20px auto;
+    width: 816px;
+    font-size: 0;
+    padding: 30px;
+    background-image: url("img/wood_texture.jpg");
+    background-size: cover;
+    border: 2px solid black;
+}
+
+div {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+fieldset:nth-child(odd) div:nth-child(even), fieldset:nth-child(even) div:nth-child(odd) {
+    background: black;
+}
+
+fieldset {
+    position: relative;
+    border: 0;
+    margin: 0;
+}
+
+.checker {
+    border: 1px solid black;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: 4px;
+    z-index: 1;
+    top: 0px;
+}
+
+.brown-checkers {
+    background: saddlebrown;
+}
+
+.red-checkers {
+    background: darkred;
+}

@@ -1,0 +1,149 @@
+* {
+    color: darkblue;
+}
+p {
+    color: red;
+}
+div * {
+    color: green;
+}
+a {
+    text-decoration: none;
+    /*cursor: default;*/
+}
+div > a {
+    color: #c926ff;
+}
+div > span > a {
+    color: #cc6417;
+}
+
+div span > a {
+    color: #4fffa9;
+}
+ul {
+    padding: 0;
+}
+ul li {
+    background: #414141;
+    display: block;
+}
+ul li:nth-child(even) {
+    /*margin-left: 100px;*/
+    background: #777777;
+}/*
+ul li:nth-child(odd) {
+    background: #414141;
+}*/
+ul li:nth-child(4) {
+    text-align: right;
+}
+ul li:nth-child(3n + 2) a {
+    color: #fc822e;
+    display: block;
+    text-align: center;
+}
+ul li:first-child a,
+ul li:last-child a {
+    color: #ffdb39;
+}
+/*-----------------jhgjhgjh-*/
+section p, section div {
+    color: #000;
+    margin: 0;
+}
+section a {
+    display: block;
+}
+section :nth-child(3n) {
+    color: red;
+}
+section div.third:first-of-type {
+    color: #5aff07;
+}
+section :nth-last-child(2) {
+    margin-left: 50px;
+}
+.sixth + * {
+    background: #0000ff;
+    color: #ffffff;
+}
+.sixth ~ a {
+    margin-left: 100px;
+}
+.sixth ~ a:nth-of-type(6n - 2) {
+    text-decoration: line-through;
+}
+[class=sixth] {
+    margin-left: 100px;
+}
+aside a{
+    display: block;
+}
+a[href="http://yahoo.com"]{
+    color: orangered;
+}
+/*атрибут заканчивается на ... строго, дальше символы не распознаются*/
+a[href$=".com"]{
+    text-decoration: underline;
+}
+/*ищем совпадение-часть независимо от места*/
+a[href*=".com"]{
+background-color: yellow;
+}
+a[href*="oo"]{
+    text-align: right;
+}
+/*ищем совпадение, атрибут начинается с ...*/
+a[href^="https://"] {
+    color: darkgreen;
+}
+img {
+    width:400px;
+    display: block;
+    margin: 5px auto;
+    border: 5px solid black;
+}
+img[alt~='автомобиль']{
+    border-color: blue;
+}
+[src$=".jpg"]{
+    border-width: 10px;
+}
+a:hover {
+    text-decoration: underline;
+}
+a[href$='.com']:hover {
+    text-decoration: none;
+}
+a:visited{
+    color: purple;
+}
+a:focus{
+    background: #ccc;
+}
+a:active{
+    background: #4fffa9;
+}
+img:hover{
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+button{
+    padding: 30px;
+}
+button:after,
+button:before{
+    content: "";
+    background: red;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+/*
+пропадет рамка если у картинки нет альта
+[alt]{
+    border: none;
+}*/

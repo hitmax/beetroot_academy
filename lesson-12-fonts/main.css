@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=League+Script|Raleway:200,200i,400,700,700i');
+
+@font-face {
+    font-family: 'debby';
+    src: url('fonts/debby.woff2') format('woff2'),
+    url('fonts/debby.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+p:first-child {
+    font-family: monospace;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+p:nth-child(2){
+    font-family: Georgia,'Times New Roman', serif;
+    text-transform: capitalize;
+    text-decoration: line-through;
+}
+p:nth-child(3){
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: bold;
+    text-transform: lowercase;
+    /*text-decoration: dashed;*/
+}
+p:nth-child(4){
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    /*text-transform: full-size-kana;*/
+    text-decoration: overline;
+}
+p:nth-child(5){
+    font-family: 'League Script', cursive;
+    /*text-transform: full-width;*/
+}
+p:nth-child(6){
+    font-family: 'debby',sans-serif;
+    font-size: 30px;
+    font-variant: all-petite-caps;
+    line-height: 30px;
+    word-spacing: 5px;
+    letter-spacing: 2.2px;
+    text-align: justify;
+    text-shadow: 2px 2px 2px black;
+    word-wrap: break-word;
+}
+div {
+    width: 200px;
+    background: gray;
+    padding: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    font: 900 italic 20px/1.5 'League Script', sans-serif;
+}
+div:hover {
+    white-space: normal;
+    margin-bottom: calc(38px - 75px);
+    cursor: pointer;
+}
+p:first-letter {
+    font-size: 150%;
+    color: red;
+}

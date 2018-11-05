@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300i,400,700|Playfair+Display:400,700');
+/*font-family: 'Playfair Display', serif;*/
+/*font-family: 'Lato', sans-serif;*/
+body {
+    background: #f1f1f1;
+    /*f4f4f4*/
+}
+main{
+    margin: 120px auto;
+    width: 1400px;
+    height: 940px;
+    background: white;
+}
+section {
+    padding: 120px ;
+}
+h1 {
+    vertical-align: middle;
+    font-size: 42px;
+    font-family: 'Playfair Display', serif;
+    color: rgb(23, 23, 23);
+    line-height: 75px;
+    text-align: left;
+    /*position: absolute;*/
+    /*left: 222.844px;*/
+    /*top: 264.783px;*/
+    /*width: 238px;*/
+    /*height: 34px;*/
+    /*z-index: 9;*/
+}
+i  {
+    font-size: 110px;
+    font-family: 'Playfair Display', serif;
+    color: #171717;
+    float: left;
+    line-height: 102px;
+    width: 100px;
+}
+p {
+    letter-spacing: 0.8px;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: rgba(23, 23, 23, 0.702);
+    line-height: 1.9;
+    /*-moz-transform: matrix( 1.10414291435951,0,0,1,0,0);*/
+    /*-webkit-transform: matrix( 1.10414291435951,0,0,1,0,0);*/
+    /*-ms-transform: matrix( 1.10414291435951,0,0,1,0,0);*/
+    /*position: absolute;*/
+    /*left: 267.703px;*/
+    /*top: 374.892px;*/
+    /*width: 1048.628px;*/
+    /*height: 499.996px;*/
+    /*z-index: 10;*/
+}
+p:nth-child(3){
+    margin: 43px 0;
+}
+span {
+    position: relative;
+    font-size: 27px;
+    line-height: 90px;
+    font-style: italic;
+    letter-spacing: 0.6px;
+    margin-left: 52px;
+}
+span:before{
+    content: '"';
+    position: absolute;
+    top: -50px;
+    left: -40px;
+    font-size: 60px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+button {
+    margin-top: 6px;
+    border: 2px solid rgb(234, 162, 88);
+    width: 265px;
+    height: 70px;
+    letter-spacing: 3.7px;
+    background: white;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    color: rgb(234, 162, 88);
+    font-weight: bold;
+    text-transform: uppercase;
+    /*position: absolute;*/
+    /*left: 219.549px;*/
+    /*top: 940.872px;*/
+    /*width: 114px;*/
+    /*height: 14px;*/
+    /*z-index: 15;*/
+}

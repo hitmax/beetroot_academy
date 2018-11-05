@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+}
+
+
+[class^=row].ib-grid {
+    font-size: 0;
+}
+[class^=row].ib-grid .col {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: top;
+}
+[class^=row] {
+    font-size: 0;
+}
+
+[class^=row] .col {
+    padding: 15px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+[class^=row].fl-grid:before,
+[class^=row].fl-grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+[class^=row].fl-grid {
+    float: left;
+}
+
+.col [class^=row] {
+    margin: -15px;
+}
+
+.row-4 .col {
+    width: 25%;
+}
+
+.row-4 .col-2 {
+    width: 50%;
+}
+
+.row-6 .col {
+    width: calc(100% / 6);
+}
+
+.row-8 .col {
+    width: calc(100% / 8);
+}
+
+.row-8 .col-2 {
+    width: calc(100% / 4);
+}
+
+.row-8 .col-3 {
+    width: calc(37.5%);
+}
+
+.row-8 .offset-1 {
+    margin-left: 12.5%;
+}

@@ -1,0 +1,58 @@
+body {
+    max-width: 1100px;
+}
+div{
+    width: 200px;
+    height: 200px;
+    background: #333333;
+    display: inline-block;
+    margin: 50px;
+    vertical-align: top;
+    font-size: 50px;
+    color: white;
+}
+div:nth-child(3){
+    /*margin-top:100px;*/
+    /*margin-left: 80px;*/
+    /*margin-bottom: -50px;*/
+    /*margin-right: -20px;*/
+    position: relative;
+    top: 50px;
+    left: 30px;
+    /*right: 50px; не будет работать, т.к. приоритет у left и top*/
+    background: yellow;
+    z-index: 1;
+
+}
+main{
+    margin: 30px;
+    background: darkslategrey;
+    display: inline-block;
+}
+section{
+    display: inline-block;
+    position: relative;
+    margin: 30px;
+    background: grey;
+}
+div:nth-child(6){
+    background: darkblue;
+    position: absolute;
+    top: 40px;
+    right: 100px;
+    left: 500px;
+    z-index: 2;
+}
+div:nth-child(9){
+    background: darkorange;
+    /*position: fixed;*/
+    top: 160px;
+    right: 150px;
+}
+p{
+    background: darkblue;
+}
+span{
+    font-size: 50px;
+    background: grey;
+}

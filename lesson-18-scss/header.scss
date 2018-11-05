@@ -1,0 +1,29 @@
+.header {
+  @include clearFix;
+  #logo {
+    float: left;
+    font-size: 20px;
+    color: $textColor1;
+    border: $b1;
+    font: $f1;
+  }
+  &-nav {
+    float: right;
+    li {
+      display: inline-block;
+    }
+    a {
+      text-decoration: none;
+      &.active {
+        color: $textColor1;
+      }
+      &.disabled {
+        color: gray;
+      }
+      &:hover {
+        text-decoration: underline;
+        color: $textColor1;
+      }
+    }
+  }
+}

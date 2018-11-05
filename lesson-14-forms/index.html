@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<form action="/" method="post">
+    <div>
+        <label for="text-input" name="first-name">Ваше имя:</label>
+        <!--<span>test</span>-->
+        <!--<p>Lorem ipsum dolor.</p>-->
+        <input type="text" id="text-input" value="Иван" readonly>
+    </div>
+    <div>
+        <label>
+            Ваша фамилия:
+            <input type="text" name="second-name" maxlength="20" minlength="2" required="required"
+                   placeholder="Ваша фамилия">
+        </label>
+    </div>
+    <div>
+        <label>
+            Дата рождения:
+            <input type="date" name="birst-date">
+        </label>
+    </div>
+    <div>
+        <label>
+            Ваш возраст:
+            <input type="number" name="age"
+            ="3">
+        </label>
+    </div>
+    <div>
+        <label>
+            Ваш email:
+            <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+        </label>
+    </div>
+    <div>
+        <label>
+            Ваш # телефона:
+            <input type="tel" name="cellphone">
+        </label>
+    </div>
+    <div>
+        <label>
+            Ваш пароль:
+            <input type="password" name="password">
+        </label>
+    </div>
+    <div>
+        <label>
+            Фото:
+            <input type="file" name="photo">
+        </label>
+    </div>
+    <div>
+        <label>
+            Присылать мне новости:
+            <input type="checkbox" name="news" checked disabled>
+        </label>
+    </div>
+    <div>
+        <label>
+            Поздравлять меня с др
+            <input type="checkbox" name="birthday">
+        </label>
+    </div>
+    <div><p>выберите свою ЗП</p>
+        <!--label*3>input:radio-->
+        <label>
+            500
+            <input type="radio" name="salary" value="500">
+        </label>
+        <label>
+            1000
+            <input type="radio" name="salary" value="1000">
+        </label>
+        <label>
+            5000
+            <input type="radio" name="salary" value="5000" disabled>
+        </label>
+    </div>
+    <div class="styled-radio">
+        <p>ежемесячная премия</p>
+        <input type="radio" name="bonus" value="500" id="b-500">
+        <label for="b-500">500</label>
+        <input type="radio" name="bonus" value="100" id="b-1000">
+        <label for="b-1000">500</label>
+        <input type="radio" name="bonus" value="5000" id="b-5000" checked disabled>
+        <label for="b-5000">500</label>
+
+    </div>
+    <div>
+        <label>
+            кратко о себе
+            <textarea name="about" cols="30" rows="10" placeholder="ваша история"></textarea>
+        </label>
+    </div>
+    <!--div>label>select>option*4-->
+    <div>
+        <label>
+            выберите ваш город
+            <select name="town-from">
+                <option value="2">киев</option>
+                <option value="kramatorsk" selected>краматорск</option>
+                <option value="3">харьков</option>
+                <option value="4">дружковка</option>
+                <option value="Kryvoi_rog" disabled>Кривой Рог</option>
+            </select>
+        </label>
+    </div>
+    <div>
+        <input type="submit" value="Зарегистрироваться">
+        <button type="reset">Сбросить данные</button>
+    </div>
+
+</form>
+</body>
+</html>
