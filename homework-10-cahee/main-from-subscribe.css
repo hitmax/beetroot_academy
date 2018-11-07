@@ -1,0 +1,39 @@
+.subscribe .wrapper-1170 {
+  padding: 150px 0;
+  background: #FFFFFF url("image/blueberries.png") no-repeat right center;
+}
+.subscribe .wrapper-1170 h3 {
+  font-size: 40px;
+  color: #262626;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+.subscribe .wrapper-1170 p {
+  margin: 30px 0;
+  width: 50%;
+  font-size: 17px;
+  line-height: 27px;
+  color: #262626;
+}
+.subscribe .wrapper-1170 form ::-webkit-input-placeholder {
+  color: #a6a6a6;
+}
+.subscribe .wrapper-1170 form [type=email] {
+  height: 55px;
+  width: 50%;
+  font-size: 15px;
+  font-weight: 300;
+  color: #a6a6a6;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+.subscribe .wrapper-1170 form [type=submit] {
+  width: 170px;
+  height: 55px;
+  background-color: #96b92c;
+  color: #FFFFFF;
+  border: none;
+  vertical-align: top;
+}
+
+/*# sourceMappingURL=main-from-subscribe.css.map */

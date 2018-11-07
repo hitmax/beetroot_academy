@@ -1,0 +1,44 @@
+$textColorLightBlack: #262626;
+
+.subscribe {
+  .wrapper-1170 {
+    padding: 150px 0;
+    background: #FFFFFF url("image/blueberries.png") no-repeat right center;
+    h3 {
+      font-size: 40px;
+      color: $textColorLightBlack;
+      text-transform: capitalize;
+      font-weight: 700;
+    }
+    p {
+      margin: 30px 0;
+      width: 50%;
+      font-size: 17px;
+      line-height: 27px;
+      color: $textColorLightBlack;
+    }
+    form {
+      ::-webkit-input-placeholder {
+        //font-weight: 300;
+        color: lighten($textColorLightBlack, 50%);
+      }
+      [type="email"] {
+        height: 55px;
+        width: 50%;
+        font-size: 15px;
+        font-weight: 300;
+        color: lighten($textColorLightBlack, 50%);
+        padding-left: 15px;
+        box-sizing: border-box;
+      }
+      [type="submit"] {
+        width: 170px;
+        height: 55px;
+        background-color: #96b92c;
+        color: #FFFFFF;
+        border: none;
+        vertical-align: top;
+      }
+    }
+  }
+}
