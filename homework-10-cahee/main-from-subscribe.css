@@ -28,12 +28,97 @@
   box-sizing: border-box;
 }
 .subscribe .wrapper-1170 form [type=submit] {
+  margin-left: 24px;
   width: 170px;
   height: 55px;
   background-color: #96b92c;
   color: #FFFFFF;
   border: none;
   vertical-align: top;
+  box-shadow: 0 2px 10px #44739a;
+}
+
+#blog {
+  background-color: #b07cf7;
+}
+#blog .wrapper-1170 {
+  text-align: center;
+}
+#blog .wrapper-1170 h2 {
+  padding-top: 100px;
+  color: #FFFFFF;
+}
+#blog .wrapper-1170 p {
+  font-size: 17px;
+  line-height: 25px;
+  width: 570px;
+  margin: 50px auto;
+  color: #FFFFFF;
+}
+#blog .wrapper-1170 .blog-articles {
+  display: flex;
+  justify-content: space-between;
+  color: #FFFFFF;
+}
+#blog .wrapper-1170 .blog-articles > div {
+  box-shadow: 0 2px 10px #44739a;
+  position: relative;
+  width: 370px;
+  height: 310px;
+  text-align: left;
+}
+#blog .wrapper-1170 .blog-articles > div:nth-child(1) {
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8)), url("image/fresh.jpg");
+}
+#blog .wrapper-1170 .blog-articles > div:nth-child(2) {
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8)), url("image/soup.jpg");
+}
+#blog .wrapper-1170 .blog-articles > div:nth-child(3) {
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8)), url("image/raspberries.jpg");
+}
+#blog .wrapper-1170 .blog-articles > div span {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  text-align: center;
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: 30px;
+  font-size: 32px;
+  line-height: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#blog .wrapper-1170 .blog-articles > div span strong {
+  font-size: 21px;
+  font-weight: 900;
+}
+#blog .wrapper-1170 .blog-articles > div .info {
+  position: absolute;
+  margin: 20px;
+  bottom: 0;
+}
+#blog .wrapper-1170 .blog-articles > div .info h4 {
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+#blog .wrapper-1170 .blog-articles > div .info em {
+  font-size: 13px;
+  display: block;
+}
+#blog .wrapper-1170 a {
+  display: inline-block;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: 200px;
+  line-height: 55px;
+  background-color: #f72b3b;
+  box-shadow: 0 2px 10px #44739a;
+  margin: 50px 0 120px;
 }
 
 /*# sourceMappingURL=main-from-subscribe.css.map */
