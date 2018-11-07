@@ -1,4 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+@mixin hover($bg) {
+  background: $bg;
+  &:hover {
+    background: lighten($bg, 15%);
+  }
+}
+
 body {
   margin: 0;
   font-family: Lato, sans-serif;
@@ -109,7 +117,7 @@ h2 {
 }
 
 h2:before, h2:after {
-  content: "";
+  content: '';
   height: 2px;
   width: 30%;
   background: #3c3c3c;
@@ -122,79 +130,78 @@ section:nth-child(odd) h2:before, section:nth-child(odd) h2:after {
 #s3 {
   background-image: url("images/services.jpg");
   background-size: cover;
-}
-#s3 .section-inner {
-  padding-top: 50px;
-  padding-bottom: 30px;
+  .section-inner {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
 }
 
-#s4 .section-inner > div {
-  margin: 30px 0 60px;
-}
-#s4 h3 {
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
-}
-#s4 p {
-  font-size: 14px;
+#s4 {
+  .section-inner > div {
+    margin: 30px 0 60px;
+  }
+  h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+  }
+  p {
+    font-size: 14px;
+  }
 }
 
 .s5 {
   padding: 0;
-}
-.s5 .row {
-  display: flex;
-  align-items: center;
-}
-.s5 .col {
-  position: relative;
-}
-.s5 .col:nth-child(2) {
-  margin: 5px 10px;
-}
-.s5 .col span {
-  text-transform: uppercase;
-}
-.s5 img {
-  width: 100%;
-  min-height: 12.5vw;
-}
-.s5 span {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  color: #ffffff;
+  .row {
+    display: flex;
+    align-items: center;
+  }
+  .col {
+    position: relative;
+    &:nth-child(2) {
+      margin: 5px 10px;
+    }
+    span {
+      text-transform: uppercase;
+    }
+  }
+  img {
+    width: 100%;
+    min-height: 12.5vw;
+  }
+  span {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #ffffff;
+  }
 }
 
-#s6 .button {
-  display: inline-block;
-  width: 395px;
-  line-height: 58px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #ffffff;
-  font-size: 16px;
-  text-align: center;
-  margin: 10px 0 55px;
-  background: #3c3c3c;
-}
-#s6 .button:hover {
-  background: #626262;
+#s6 {
+  .button {
+    display: inline-block;
+    width: 395px;
+    line-height: 58px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    margin: 10px 0 55px;
+    @include hover(#3c3c3c);
+  }
 }
 
 footer {
   background-color: #00b5b5;
   text-align: center;
+  svg {
+    vertical-align: middle;
+    #f-logo .cls-3, #f-logo .cls-4 {
+      stroke: #3c3c3c;
+    }
+    #f-logo .cls-5 {
+      fill: #3c3c3c;
+    }
+  }
 }
-footer svg {
-  vertical-align: middle;
-}
-footer svg #f-logo .cls-3, footer svg #f-logo .cls-4 {
-  stroke: #3c3c3c;
-}
-footer svg #f-logo .cls-5 {
-  fill: #3c3c3c;
-}
-
-/*# sourceMappingURL=main.css.map */
