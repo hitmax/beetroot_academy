@@ -1,0 +1,22 @@
+.stars {
+  &__star{
+    display: none;
+    & + label {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin: 5px;
+      border-radius: 50%;
+      background: #333333;
+    }
+    &:checked + label, & + label:hover {
+      background: #333333;
+      & ~ label{
+        background: #777777;
+      }
+      &:last-child:hover {
+        background: #333333;
+      }
+    }
+  }
+}
