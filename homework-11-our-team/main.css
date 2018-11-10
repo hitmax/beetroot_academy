@@ -53,15 +53,14 @@ section {
 }
 section .border-wrapper {
   border: 1px solid #ffcc00;
-  height: 100%;
   padding: 15px;
   position: relative;
+  z-index: 0;
 }
 section .border-wrapper .photo {
   width: 388px;
   height: 388px;
   background-image: url("image/photo.jpg");
-  position: absolute;
   border: 1px solid #ffcc00;
 }
 section .border-wrapper:before, section .border-wrapper:after {
@@ -70,17 +69,17 @@ section .border-wrapper:before, section .border-wrapper:after {
   position: absolute;
   background: #FFFFFF;
   padding: 1px;
+  z-index: -1;
 }
 section .border-wrapper:before {
   width: 100%;
   height: 50%;
   left: -1px;
   top: 25%;
-  padding: 1px;
 }
 section .border-wrapper:after {
-  width: 100%;
-  height: 50%;
+  width: 50%;
+  height: 100%;
   left: 25%;
   top: -1px;
 }
