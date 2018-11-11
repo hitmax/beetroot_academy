@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,700");
+@font-face {
+  font-family: "AleoRegular";
+  src: url("fonts/aleo-regular-webfont.woff2") format("woff2"), url("fonts/aleo-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-family: "AleoRegular", serif;
+  font-size: 36px;
+}
+
+.wrapper-1110 {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.main-section {
+  position: relative;
+  background: url("img/main-section-bg.jpg") no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  text-align: center;
+  height: 100vh;
+}
+.main-section h1 {
+  margin-top: 265px;
+  margin-bottom: 12px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.main-section span {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 22px;
+  letter-spacing: 0.31em;
+  text-transform: capitalize;
+  margin: 20px;
+}
+.main-section form {
+  width: 650px;
+  height: 60px;
+  background-color: #FFFFFF;
+  padding-left: 125px;
+  box-sizing: border-box;
+  margin: 50px auto 0;
+}
+.main-section form input[type=search] {
+  border: none;
+  min-width: 350px;
+  line-height: 58px;
+}
+.main-section form input[type=search]::-webkit-input-placeholder {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  color: #999999;
+}
+.main-section form button {
+  width: 146px;
+  height: 56px;
+  background: #5474fd;
+  font-family: "AleoRegular", serif;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 56px;
+  text-transform: uppercase;
+  border: none;
+  margin: 2px;
+  float: right;
+  position: relative;
+  color: #FFFFFF;
+}
+.main-section form button:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background: url("img/loop.svg") no-repeat;
+  right: 10px;
+  top: calc(50% - 11px);
+}
+.main-section a {
+  text-transform: capitalize;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 130px;
+  left: calc(50% - 56px);
+}
+.main-section a:after {
+  content: "";
+  display: block;
+  margin: 15px auto 0;
+  height: 9px;
+  width: 14px;
+  background-image: url("img/arrow-down.svg");
+}
+
+#header {
+  background-color: #5474fd;
+  line-height: 80px;
+}
+#header .wrapper-1110 {
+  overflow: hidden;
+}
+#header .wrapper-1110 > a {
+  display: inline;
+  float: left;
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 80px;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+#header ul {
+  float: right;
+}
+#header ul li {
+  display: inline-block;
+  margin-left: 40px;
+}
+#header ul li a {
+  font-family: "AleoRegular", serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+#why-choose-us {
+  background: url("img/why-choose-us-bg.jpg") no-repeat;
+  background-size: cover;
+}
+#why-choose-us .wrapper-1110 {
+  overflow: hidden;
+}
+#why-choose-us .wrapper-540 {
+  width: 540px;
+}
+#why-choose-us .left {
+  float: left;
+}
+#why-choose-us .left h2 {
+  margin: 200px 0 60px;
+}
+#why-choose-us .left p {
+  margin-bottom: 36px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.1em;
+}
+#why-choose-us .left a {
+  font-size: 16px;
+  letter-spacing: 0.075em;
+  display: block;
+  width: 225px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 60px;
+  background: linear-gradient(45deg, #496bfe 2%, #496bfe 41%, #496bfe 41%, #5474fd 42%, #5474fd 100%);
+}
+#why-choose-us .right {
+  float: right;
+}
+#why-choose-us .right img {
+  width: 350px;
+  height: 220px;
+  float: right;
+}
+#why-choose-us .right img:first-child {
+  margin: 120px 125px 5px 0;
+}
+#why-choose-us .right img:last-child {
+  margin-bottom: 120px;
+}
+
+#how-it-works {
+  background-color: #333333;
+}
+#how-it-works .wrapper-1110 div {
+  display: inline-block;
+  text-align: center;
+}
+#how-it-works .wrapper-1110 div:first-child, #how-it-works .wrapper-1110 div:last-child {
+  margin: 100px 70px;
+}
+#how-it-works .wrapper-1110 div:nth-child(2) {
+  margin: auto 94px;
+}
+#how-it-works .wrapper-1110 div span {
+  margin-top: 15px;
+  display: block;
+  font-family: "AleoRegular", serif;
+  font-size: 36px;
+}
+
+#spain-1 {
+  height: 700px;
+  background: url("img/spain-1-bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+#spain-2 {
+  height: 700px;
+  background: url("img/spain-2-bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=main.css.map */
