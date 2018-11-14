@@ -1,3 +1,9 @@
+$fontJosefin: 'Josefin Sans', sans-serif;
+$fontJosefin: 'Josefin Sans', sans-serif;
+$fontAleoRegular: 'AleoRegular', serif;
+$blueColor: #5474fd;
+$grayBgColor: #232323;
+
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700');
 
 @font-face {
@@ -17,12 +23,18 @@
   text-transform: uppercase;
   line-height: 60px;
   background: linear-gradient(45deg, #496bfe 2%, #496bfe 41%, #496bfe 41%, #5474fd 42%, #5474fd 100%);
+  font-family: $fontAleoRegular;
 }
 
-$fontJosefin: 'Josefin Sans', sans-serif;
-$fontJosefin: 'Josefin Sans', sans-serif;
-$fontAleoRegular: 'AleoRegular', serif;
-$blueColor: #5474fd;
+//for SVG
+.cls-2 {
+  stroke: #ffffff;
+  stroke-linecap: round;
+  stroke-width: 1px;
+  stroke-dasharray: 0.001, 5;
+  fill: none;
+  opacity: 0.5;
+}
 
 * {
   color: #FFFFFF;
@@ -35,6 +47,26 @@ a {
 h2 {
   font-family: $fontAleoRegular;
   font-size: 36px;
+  text-transform: capitalize;
+}
+
+h3 {
+  font-family: $fontJosefin;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+a, img, button {
+  &:hover {
+    filter: drop-shadow(1px 1px 3px black);
+    opacity: 0.9;
+  }
+}
+
+main {
+  min-width: 1110px;
 }
 
 .wrapper-1110 {
@@ -44,7 +76,7 @@ h2 {
 
 .main-section {
   position: relative;
-  background: url("img/main-section-bg.jpg") no-repeat;
+  background: $blueColor url("img/main-section-bg.jpg") no-repeat;
   background-size: cover;
   overflow: hidden;
   text-align: center;
@@ -128,7 +160,7 @@ h2 {
   }
 }
 
-#header {
+header {
   background-color: $blueColor;
   line-height: 80px;
   .wrapper-1110 {
@@ -157,68 +189,94 @@ h2 {
   }
 }
 
+.wrapper-540 {
+  width: 540px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
 #why-choose-us {
-  background: url("img/why-choose-us-bg.jpg") no-repeat;
+  background: $grayBgColor url("img/why-choose-us-bg.jpg") no-repeat;
   background-size: cover;
   .wrapper-1110 {
     overflow: hidden;
   }
-  .wrapper-540 {
-    width: 540px;
+  h2 {
+    margin: 200px 0 60px;
+  }
+  p {
+    margin-bottom: 36px;
+    font-family: $fontJosefin;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.1em;
+  }
+  a {
+    @include blueButton;
+  }
 
-  }
-  .left {
-    float: left;
-    h2 {
-      margin: 200px 0 60px;
-    }
-    p {
-      margin-bottom: 36px;
-      font-family: $fontJosefin;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 26px;
-      letter-spacing: 0.1em;
-    }
-    a {
-      @include blueButton;
-    }
-  }
-  .right {
+  img {
+    width: 350px;
+    height: 220px;
     float: right;
-    img {
-      width: 350px;
-      height: 220px;
-      float: right;
-      &:first-child {
-        margin: 120px 125px 5px 0;
-      }
-      &:last-child {
-        margin-bottom: 120px;
-      }
+    &:first-child {
+      margin: 120px 125px 5px 0;
     }
-
+    &:last-child {
+      margin-bottom: 120px;
+    }
   }
 }
 
 #how-it-works {
   background-color: #333333;
-  .wrapper-1110{
-    div {
+  z-index: 5;
+  .wrapper-1110 {
+    position: relative;
+    svg {
+      width: 778px;
+      position: absolute;
+      z-index: 1;
+      top: -100px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+    }
+    article {
       display: inline-block;
       text-align: center;
-      &:first-child, &:last-child {
-        margin: 100px 70px ;
+      &:nth-child(2), &:nth-child(4) {
+        margin: 100px 70px;
       }
-      &:nth-child(2){
+      &:nth-child(3) {
         margin: auto 94px;
       }
-
-      span {
+      h2 {
         margin-top: 15px;
         display: block;
         font-family: $fontAleoRegular;
-        font-size:36px;
+        font-size: 36px;
+      }
+      .wrapper-circle {
+        position: relative;
+        z-index: 2;
+        height: 98px;
+        width: 98px;
+        border-radius: 50%;
+        background-color: #333333;
+        margin: 0 auto;
+        img {
+          height: 62px;
+          margin: 18px 0;
+        }
       }
     }
   }
@@ -226,11 +284,98 @@ h2 {
 
 #spain-1 {
   height: 700px;
-  background: url("img/spain-1-bg.jpg") no-repeat;
+  background: $grayBgColor url("img/spain-1-bg.jpg") no-repeat;
   background-size: cover;
 }
-#spain-2{
+
+#spain-2 {
   height: 700px;
-  background: url("img/spain-2-bg.jpg") no-repeat;
+  background: $grayBgColor url("img/spain-2-bg.jpg") no-repeat;
   background-size: cover;
+
 }
+
+.info {
+  margin-top: 230px;
+  padding: 50px 30px;
+  background-color: rgba(35, 35, 35, 0.9);
+  span, h3, p {
+    font-family: $fontJosefin;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  span {
+    letter-spacing: 0.075em;
+  }
+  h3 {
+    padding: 30px 0;
+  }
+  p {
+    font-size: 16px;
+  }
+  a {
+    margin-top: 50px;
+    @include blueButton;
+  }
+}
+
+#what-our-tourist-say {
+  background: url("img/what-our-tourist-say.jpg") no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  h2 {
+    margin: 120px 0 100px;
+    text-align: center;
+  }
+  article {
+    display: flex;
+    align-items: center;
+    margin-bottom: 200px;
+    .info {
+      padding: 50px 60px;
+      margin: 0;
+      h3 {
+        padding: 0 0 30px;
+      }
+      p {
+        letter-spacing: -1px;
+        i {
+          color: $blueColor;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $grayBgColor;
+  font-family: $fontJosefin;
+  text-align: center;
+  overflow: hidden;
+  .wrapper-1110 {
+    margin: 50px auto;
+    h4 {
+      text-transform: uppercase;
+      font-size: 24px;
+      letter-spacing: 0.14em;
+    }
+    span {
+      text-transform: capitalize;
+      font-size: 16px;
+      letter-spacing: 0.1em;
+      line-height: 26px;
+    }
+    .socials {
+      margin-top: 26px;
+    }
+    li {
+      display: inline-block;
+      margin: 0 12px;
+      a:hover > i {
+        color: $blueColor;
+      }
+    }
+  }
+}
+

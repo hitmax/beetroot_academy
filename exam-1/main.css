@@ -5,6 +5,15 @@
   font-weight: normal;
   font-style: normal;
 }
+.cls-2 {
+  stroke: #ffffff;
+  stroke-linecap: round;
+  stroke-width: 1px;
+  stroke-dasharray: 0.001, 5;
+  fill: none;
+  opacity: 0.5;
+}
+
 * {
   color: #FFFFFF;
 }
@@ -16,6 +25,24 @@ a {
 h2 {
   font-family: "AleoRegular", serif;
   font-size: 36px;
+  text-transform: capitalize;
+}
+
+h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+a:hover, img:hover, button:hover {
+  filter: drop-shadow(1px 1px 3px black);
+  opacity: 0.9;
+}
+
+main {
+  min-width: 1110px;
 }
 
 .wrapper-1110 {
@@ -25,7 +52,7 @@ h2 {
 
 .main-section {
   position: relative;
-  background: url("img/main-section-bg.jpg") no-repeat;
+  background: #5474fd url("img/main-section-bg.jpg") no-repeat;
   background-size: cover;
   overflow: hidden;
   text-align: center;
@@ -109,14 +136,14 @@ h2 {
   background-image: url("img/arrow-down.svg");
 }
 
-#header {
+header {
   background-color: #5474fd;
   line-height: 80px;
 }
-#header .wrapper-1110 {
+header .wrapper-1110 {
   overflow: hidden;
 }
-#header .wrapper-1110 > a {
+header .wrapper-1110 > a {
   display: inline;
   float: left;
   font-family: "Josefin Sans", sans-serif;
@@ -125,36 +152,42 @@ h2 {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
-#header ul {
+header ul {
   float: right;
 }
-#header ul li {
+header ul li {
   display: inline-block;
   margin-left: 40px;
 }
-#header ul li a {
+header ul li a {
   font-family: "AleoRegular", serif;
   font-size: 14px;
   text-transform: uppercase;
 }
 
+.wrapper-540 {
+  width: 540px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
 #why-choose-us {
-  background: url("img/why-choose-us-bg.jpg") no-repeat;
+  background: #232323 url("img/why-choose-us-bg.jpg") no-repeat;
   background-size: cover;
 }
 #why-choose-us .wrapper-1110 {
   overflow: hidden;
 }
-#why-choose-us .wrapper-540 {
-  width: 540px;
-}
-#why-choose-us .left {
-  float: left;
-}
-#why-choose-us .left h2 {
+#why-choose-us h2 {
   margin: 200px 0 60px;
 }
-#why-choose-us .left p {
+#why-choose-us p {
   margin-bottom: 36px;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
@@ -162,7 +195,7 @@ h2 {
   line-height: 26px;
   letter-spacing: 0.1em;
 }
-#why-choose-us .left a {
+#why-choose-us a {
   font-size: 16px;
   letter-spacing: 0.075em;
   display: block;
@@ -171,52 +204,169 @@ h2 {
   text-transform: uppercase;
   line-height: 60px;
   background: linear-gradient(45deg, #496bfe 2%, #496bfe 41%, #496bfe 41%, #5474fd 42%, #5474fd 100%);
+  font-family: "AleoRegular", serif;
 }
-#why-choose-us .right {
-  float: right;
-}
-#why-choose-us .right img {
+#why-choose-us img {
   width: 350px;
   height: 220px;
   float: right;
 }
-#why-choose-us .right img:first-child {
+#why-choose-us img:first-child {
   margin: 120px 125px 5px 0;
 }
-#why-choose-us .right img:last-child {
+#why-choose-us img:last-child {
   margin-bottom: 120px;
 }
 
 #how-it-works {
   background-color: #333333;
+  z-index: 5;
 }
-#how-it-works .wrapper-1110 div {
+#how-it-works .wrapper-1110 {
+  position: relative;
+}
+#how-it-works .wrapper-1110 svg {
+  width: 778px;
+  position: absolute;
+  z-index: 1;
+  top: -100px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+#how-it-works .wrapper-1110 article {
   display: inline-block;
   text-align: center;
 }
-#how-it-works .wrapper-1110 div:first-child, #how-it-works .wrapper-1110 div:last-child {
+#how-it-works .wrapper-1110 article:nth-child(2), #how-it-works .wrapper-1110 article:nth-child(4) {
   margin: 100px 70px;
 }
-#how-it-works .wrapper-1110 div:nth-child(2) {
+#how-it-works .wrapper-1110 article:nth-child(3) {
   margin: auto 94px;
 }
-#how-it-works .wrapper-1110 div span {
+#how-it-works .wrapper-1110 article h2 {
   margin-top: 15px;
   display: block;
   font-family: "AleoRegular", serif;
   font-size: 36px;
 }
+#how-it-works .wrapper-1110 article .wrapper-circle {
+  position: relative;
+  z-index: 2;
+  height: 98px;
+  width: 98px;
+  border-radius: 50%;
+  background-color: #333333;
+  margin: 0 auto;
+}
+#how-it-works .wrapper-1110 article .wrapper-circle img {
+  height: 62px;
+  margin: 18px 0;
+}
 
 #spain-1 {
   height: 700px;
-  background: url("img/spain-1-bg.jpg") no-repeat;
+  background: #232323 url("img/spain-1-bg.jpg") no-repeat;
   background-size: cover;
 }
 
 #spain-2 {
   height: 700px;
-  background: url("img/spain-2-bg.jpg") no-repeat;
+  background: #232323 url("img/spain-2-bg.jpg") no-repeat;
   background-size: cover;
+}
+
+.info {
+  margin-top: 230px;
+  padding: 50px 30px;
+  background-color: rgba(35, 35, 35, 0.9);
+}
+.info span, .info h3, .info p {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+}
+.info span {
+  letter-spacing: 0.075em;
+}
+.info h3 {
+  padding: 30px 0;
+}
+.info p {
+  font-size: 16px;
+}
+.info a {
+  margin-top: 50px;
+  font-size: 16px;
+  letter-spacing: 0.075em;
+  display: block;
+  width: 225px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 60px;
+  background: linear-gradient(45deg, #496bfe 2%, #496bfe 41%, #496bfe 41%, #5474fd 42%, #5474fd 100%);
+  font-family: "AleoRegular", serif;
+}
+
+#what-our-tourist-say {
+  background: url("img/what-our-tourist-say.jpg") no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+#what-our-tourist-say h2 {
+  margin: 120px 0 100px;
+  text-align: center;
+}
+#what-our-tourist-say article {
+  display: flex;
+  align-items: center;
+  margin-bottom: 200px;
+}
+#what-our-tourist-say article .info {
+  padding: 50px 60px;
+  margin: 0;
+}
+#what-our-tourist-say article .info h3 {
+  padding: 0 0 30px;
+}
+#what-our-tourist-say article .info p {
+  letter-spacing: -1px;
+}
+#what-our-tourist-say article .info p i {
+  color: #5474fd;
+}
+
+footer {
+  background-color: #232323;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  overflow: hidden;
+}
+footer .wrapper-1110 {
+  margin: 50px auto;
+}
+footer .wrapper-1110 h4 {
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 0.14em;
+}
+footer .wrapper-1110 span {
+  text-transform: capitalize;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  line-height: 26px;
+}
+footer .wrapper-1110 .socials {
+  margin-top: 26px;
+}
+footer .wrapper-1110 li {
+  display: inline-block;
+  margin: 0 12px;
+}
+footer .wrapper-1110 li a:hover > i {
+  color: #5474fd;
 }
 
 /*# sourceMappingURL=main.css.map */

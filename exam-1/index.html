@@ -6,23 +6,29 @@
     <link rel="icon" href="img/earth-favicon.png">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="for-svg.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid"
+     width="778" height="96" viewBox="0 0 778 96" display="none">
+    <path d="M0.625,95.500 C0.625,95.500 193.102,-116.958 393.684,95.500 C393.684,95.500 569.952,-118.254 777.625,95.500 "
+          id="path-1" class="cls-2" fill-rule="evenodd"/>
+</svg>
 <main>
     <section class="main-section">
         <div class="wrapper-1110">
             <h1>Bhromaon</h1>
             <span>Safe Travel Anywhere</span>
             <form action="/">
-                <input type="search" placeholder="Search Your Travel Destination">
-                <!--<input type="button" value="Search">-->
+                <input type="search" placeholder="Search Your Travel Destination" pattern="[a-z,A-Z]{4,15}"
+                       title="Введите название города/места, не менее 4х символов">
                 <button>Search</button>
             </form>
             <a href="#header">Scroll Down</a>
         </div>
     </section>
-    <header id="header">
+    <header>
         <div class="wrapper-1110">
             <a href="#">Bhromaon</a>
             <ul>
@@ -60,34 +66,110 @@
     </section>
     <section id="how-it-works">
         <div class="wrapper-1110">
-            <div>
-                <img src="img/search.svg" alt="search">
-                <span>Search Places</span>
-            </div>
-            <div>
-                <img src="img/select.svg" alt="select">
-                <span>Select Places</span>
-            </div>
-            <div>
-                <img src="img/like.svg" alt="like">
-                <span>Book & Enjoy</span>
-            </div>
+            <svg>
+                <use xlink:href="#path-1">
+
+                </use>
+            </svg>
+            <article>
+                <div class="wrapper-circle">
+                    <img src="img/search.svg" alt="search">
+                </div>
+                <h2>Search Places</h2>
+            </article>
+            <article>
+                <div class="wrapper-circle">
+                    <img src="img/select.svg" alt="select">
+                </div>
+
+                <h2>Select Places</h2>
+            </article>
+            <article>
+                <div class="wrapper-circle">
+                    <img src="img/like.svg" alt="like">
+                </div>
+                <h2>Book & Enjoy</h2>
+            </article>
         </div>
     </section>
     <section id="spain-1">
         <div class="wrapper-1110">
-            <div class="wrapper-540 left">
-
+            <div class="wrapper-540 left info">
+                <span>Spain</span>
+                <h3>Grand Spain Madrid</h3>
+                <p>But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising
+                    pain was account born and I account will give you a complete account of the system</p>
+                <a href="#">BOOK NOW</a>
             </div>
         </div>
     </section>
     <section id="spain-2">
         <div class="wrapper-1110">
-            <div class="wrapper-540 right">
-
+            <div class="wrapper-540 right info">
+                <span>Spain</span>
+                <h3>Grand Spain Madrid</h3>
+                <p>But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising
+                    pain was account born and I account will give you a complete account of the system</p>
+                <a href="#">BOOK NOW</a>
             </div>
         </div>
     </section>
+    <section id="what-our-tourist-say">
+        <div class="wrapper-1110">
+            <h2>What Our Tourist Say</h2>
+            <article>
+                <img src="img/traveller.jpg" alt="traveller" title="tr">
+                <div class="info">
+                    <h3>Sam Sumon</h3>
+                    <p>
+                        <sup>
+                            <i class="fas fa-quote-left"></i>
+                        </sup>
+                        But I must explain to you how all this mistaken idea of account to denouncinpleasure and
+                        praising pain But I must explain to you how all this mistaken idea of account to nai denouncing
+                        pleasure and praising pain was account born and I account will give you a complete account of
+                        the system was account born and I account will give you a nai the complete account of the
+                        system
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <footer>
+        <div class="wrapper-1110">
+            <h4>Bhromaon</h4>
+            <span>Safe Travel Anywhere</span>
+            <div class="socials">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </main>
 </body>
 </html>
