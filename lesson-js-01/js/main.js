@@ -18,7 +18,7 @@
 
     if (name && age) {
         console.log('Hello, ' + name + '! Welcome!');
-    } else if (name && !age){
+    } else if (name && !age) {
         console.log(name + ', get away if not 18');
     } else if (!name && age) {
         console.log('input your name!');
