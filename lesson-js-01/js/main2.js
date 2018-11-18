@@ -84,4 +84,30 @@
     do {
         console.log('do while', aaa);
     } while (aaa < 10);
+
+    console.log('lenght of string', str3.length);
+    console.log('first symbol of string', str3[0]);
+    console.log('substr returns the part of string', str3.substr(0,3));
+
+    console.log('toFixed(1) rounding 12.33 to 12.3', int3.toFixed(1));
+
+    var Ann = '12 apples',
+        Vasya = '1.3 watermelon  and 2 melons', //get only first integer
+        Ivan = '3 banana';
+    console.log(parseInt(Ann) + parseFloat(Vasya) + parseInt(Ivan));
+
+    console.log(Math.floor(1.9)); //to min int ~~ 1
+    console.log(Math.round(1.9)); // math rounding
+    console.log(Math.ceil(1.9));  // to max int ~~ 2
+    console.log(Math.random());   // random number 0 < num < 1
+
+    var coin = Math.round(Math.random());
+    if (coin){
+        console.log('orel');
+    } else {
+        console.log('reshka');
+    }
+
+    console.log(coin ? 'orel' : 'reshka');
+
 })();
