@@ -43,9 +43,29 @@
     fruitsArray.splice(4, 1);
     console.log(fruitsArray);
 
+    var student = {
+        firstName: 'Ivan',
+        secondName: 'Ivanov',
+        age: 20,
+        rating: 97,
+    };
 
+    for (var key in student) {
+        // console.log(key, student[key]);
+        if (key === 'rating') {
+            if (student[key] >= 90) {
+                console.log(key + ': perfect');
+            } else if (student[key] >= 70) {
+                console.log(key + ': good');
+            } else if (student[key] >= 55) {
+                console.log(key + ': basic');
+            } else {
+                console.log(key + ': bad');
+            }
+        } else {
+            console.log(key + ': ' + student[key])
+        }
+    }
 
+})();
 
-
-})
-();
