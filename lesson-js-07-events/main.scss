@@ -1,0 +1,31 @@
+span, div, i, p {
+  height: 40px;
+  width: 200px;
+  background: gray;
+  border: 5px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+
+
+section {
+  height: 200px;
+  width: 200px;
+  background: gray;
+  display: flex;
+  margin-top: 10px;
+  div {
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+    margin: auto;
+  }
+}
+
+input:not([type=checkbox]) {
+  margin-top: 20px;
+  display: block;
+}
