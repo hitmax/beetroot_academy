@@ -1,4 +1,4 @@
-span, div, i, p {
+span, div, i, p, b {
   height: 40px;
   width: 200px;
   background: gray;
@@ -12,7 +12,7 @@ span, div, i, p {
 
 
 section {
-  height: 200px;
+  height: 400px;
   width: 200px;
   background: gray;
   display: flex;
@@ -25,7 +25,16 @@ section {
   }
 }
 
-input:not([type=checkbox]) {
+input:not([type=checkbox]), label {
   margin-top: 20px;
   display: block;
+}
+
+#up {
+  padding: 20px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ccc;
+  display: none;
 }
