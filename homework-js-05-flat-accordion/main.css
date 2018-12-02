@@ -8,6 +8,7 @@
 }
 body {
   display: flex;
+  flex-direction: column;
   background-color: #f6704b;
   font-family: "JF-Flat", sans-serif;
   line-height: 24px;
@@ -42,28 +43,53 @@ main section p {
   padding: 14px;
   display: none;
 }
-main section p.show {
+main section.show p {
   display: block;
 }
-main .location {
+
+.location {
   background-color: #620808;
   color: #ffe9c1;
 }
-main .music {
+
+.music {
   background-color: #a53f3f;
   color: #f4ce74;
 }
-main .notes {
+
+.notes {
   background-color: #f4ce74;
   color: #620808;
 }
-main .books {
+
+.books {
   background-color: #ffe9c1;
   color: #a53f3f;
 }
-main .tendances {
+
+.tendances {
   background-color: #d5441c;
   color: #ffe9c1;
+}
+
+footer {
+  width: 500px;
+  margin: 0 auto;
+}
+footer .tabs a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid black;
+}
+footer .tabs a.active {
+  background-color: #ccc;
+}
+footer .tabs-content div {
+  display: none;
+}
+footer .tabs-content div.active {
+  display: inline-block;
 }
 
 /*# sourceMappingURL=main.css.map */

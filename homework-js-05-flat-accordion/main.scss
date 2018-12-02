@@ -9,6 +9,7 @@
 
 body {
   display: flex;
+  flex-direction: column; //for tabs
   background-color: #f6704b;
   font-family: 'JF-Flat', sans-serif;
   line-height: 24px;
@@ -20,6 +21,7 @@ main {
   width: 380px;
   margin: auto;
   section {
+
     img {
       display: inline-block;
       margin-left: 20px;
@@ -42,31 +44,64 @@ main {
       margin: 0;
       padding: 14px;
       display: none;
-      &.show {
+    }
+    &.show {
+      p {
         display: block;
       }
     }
+  }
 
-  }
-  .location {
-    background-color: #620808;
-    color: #ffe9c1;
-  }
-  .music {
-    background-color: #a53f3f;
-    color: #f4ce74;
-  }
-  .notes {
-    background-color: #f4ce74;
-    color: #620808;
-  }
-  .books {
-    background-color: #ffe9c1;
-    color: #a53f3f;
-  }
-  .tendances {
-    background-color: #d5441c;
-    color: #ffe9c1;
+}
+
+.location {
+  background-color: #620808;
+  color: #ffe9c1;
+}
+
+.music {
+  background-color: #a53f3f;
+  color: #f4ce74;
+}
+
+.notes {
+  background-color: #f4ce74;
+  color: #620808;
+}
+
+.books {
+  background-color: #ffe9c1;
+  color: #a53f3f;
+}
+
+.tendances {
+  background-color: #d5441c;
+  color: #ffe9c1;
+}
+
+// for tabs
+
+footer {
+  width: 500px;
+  margin: 0 auto;
+  .tabs {
+    a {
+      text-decoration: none;
+      display: inline-block;
+      padding: 10px;
+      border: 1px solid black;
+      &.active {
+        background-color: #ccc;
+      }
+    }
+    &-content {
+      div {
+        display: none;
+        &.active {
+          display: inline-block;
+        }
+      }
+    }
   }
 }
 
