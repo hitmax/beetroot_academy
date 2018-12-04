@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  background: #212534 url("img/BG.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  margin: 0;
+}
+
+.active .cls-3 {
+  opacity: 1;
+}
+
+.cls-3 {
+  fill: #bdc3c7;
+  filter: url(#color-overlay-1);
+  opacity: 0.7;
+}
+
+main {
+  margin: auto;
+  width: 600px;
+  height: 550px;
+}
+main .tabs {
+  background-color: #2b3040;
+  display: flex;
+  justify-content: space-around;
+}
+main .tabs div {
+  cursor: pointer;
+  height: 115px;
+  width: 150px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .tabs div span {
+  font-size: 16px;
+  color: #b7bacd;
+  margin-top: 16px;
+  text-transform: uppercase;
+}
+main .tabs div.active {
+  border-bottom: 2px solid #fff;
+}
+main .tabs div.active span {
+  color: #fff;
+}
+main .tabs-content {
+  padding: 60px 50px;
+  background-color: #212534;
+}
+main .tabs-content [data-id=information] {
+  height: 310px;
+}
+main .tabs-content .image-rating-section {
+  display: inline-block;
+  width: 160px;
+}
+main .tabs-content .image-rating-section .stars {
+  margin-top: 16px;
+  display: flex;
+}
+main .tabs-content .image-rating-section .stars__state {
+  display: none;
+}
+main .tabs-content .image-rating-section .stars__star {
+  width: 30px;
+  height: 30px;
+  background: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='80'%20height='30'%3E%3Cpath%20d='M17.5,12.5h-8.5l6.8,5-2.6,8.1,6.8-5,6.8,5-2.6-8.1,6.8-5h-8.5l-2.6-8.1z'%20fill='%23c0c0c0'%20stroke='%23c0c0c0'/%3E%3Cpath%20d='M57.5,12.5h-8.5l6.8,5-2.6,8.1,6.8-5,6.8,5-2.6-8.1,6.8-5h-8.5l-2.6-8.1z'%20fill='%23ffd83d'%20stroke='%23eac328'/%3E%3C/svg%3E");
+  background-position: -40px 0px;
+}
+main .tabs-content .image-rating-section .stars__state:checked ~ .stars__star {
+  background-position: 0px 0px;
+}
+main .tabs-content .image-rating-section .stars:hover > label.stars__star {
+  background-position: -40px 0px;
+}
+main .tabs-content .image-rating-section .stars__star:hover ~ label.stars__star {
+  background-position: 0px 0px;
+}
+main .tabs-content .info-section {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  vertical-align: top;
+  width: 300px;
+  height: 100%;
+  margin-left: 36px;
+}
+main .tabs-content .info-section .about-game .score {
+  float: right;
+}
+main .tabs-content .info-section .about-game h2 {
+  font-size: 32px;
+  margin: 5px 0;
+}
+main .tabs-content .info-section .game-info {
+  color: #b7bacd;
+  line-height: 22px;
+}
+main .tabs-content .info-section .price-buy span:nth-child(2) {
+  color: #fedc3f;
+  font-size: 12px;
+}
+main .tabs-content .info-section .price-buy span:last-child {
+  font-size: 32px;
+  display: block;
+}
+main .tabs-content .info-section .price-buy button {
+  float: right;
+  width: 164px;
+  line-height: 55px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #13e28d;
+  border-radius: 3px;
+  padding: 0;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+main .tabs-content .info-section .price-buy button:hover {
+  box-shadow: 0px 0px 10px #ccc;
+}
+main .tabs-content > div {
+  display: none;
+}
+main .tabs-content > div.active {
+  display: block;
+}
+
+/*# sourceMappingURL=main.css.map */
