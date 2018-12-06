@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TODO list</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<main>
+    <h1>your TODO list</h1>
+    <input type="text" id="input-for-todo" placeholder="Type your task here and press 'Add'">
+    <label for="input-for-todo">
+        <button>Add</button>
+    </label>
+    <form action="/" class="filters">
+        <input name="filters" type="radio" id="show-all" checked>
+        <label for="show-all">Show all</label>
+        <input name="filters" type="radio" id="show-completed">
+        <label for="show-completed">Show completed tasks</label>
+        <input name="filters" type="radio" id="show-uncompleted">
+        <label for="show-uncompleted">Show uncompleted tasks</label>
+    </form>
+    <section class="todo-list">
+        <ul>
+        </ul>
+    </section>
+</main>
+
+<script src="js/jquery-3.3.1.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
