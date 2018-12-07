@@ -17,7 +17,7 @@
 
         $('.add-button').on('click', addEvent);
 
-        $(window).on('keyup', function (event) {
+        $('#input-for-todo').on('keyup', function (event) {
             if (event.keyCode === 13) {
                 addEvent();
             }
