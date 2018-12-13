@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="8815c08b-b38d-47e0-bd5a-97ab90107387" name="xampp" url="http://localhost">
+        <fileTransfer host="localhost" port="21" rootFolder="/ajax">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="11f89eb2-286a-4e88-a0a6-585261f46f6d" name="beget_sftp" url="http://slackbeet.beget.tech">
+        <fileTransfer host="slackbeet.beget.tech" port="22" rootFolder="/slackbeet.beget.tech/public_html/ajax/" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="f8623a98-462e-46eb-a8f3-bb7b0cd2dd8d" name="beget_ftp" url="http://slackbeet.beget.tech">
+        <fileTransfer host="slackbeet.beget.tech" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
