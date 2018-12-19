@@ -3,7 +3,7 @@
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
-  font-size: 16px;
+  font-size: 1em;
   color: #fff;
   letter-spacing: 0.08em;
   //background-color: #9eabad;
@@ -19,8 +19,11 @@ a {
 }
 
 .wrapper-1170 {
+  box-sizing: border-box;
   max-width: 1170px;
+  width: 100%;
   margin: 0 auto;
+  padding: 0 10px;
   .right {
     float: right;
   }
@@ -32,14 +35,16 @@ a {
   }
   .wrapper-470 {
     max-width: 468px;
+    width: 40%;
     font-size: 0;
   }
   .wrapper-600 {
     max-width: 600px;
+    width: 51%;
   }
 }
 
-.welcome {
+#welcome {
   background: #020407 url("../images/hero-bg.jpg") repeat-x top;
   header {
     padding: 66px 0;
@@ -52,32 +57,41 @@ a {
       }
     }
     nav {
-      line-height: 34px;
+      line-height: 2em;
       a {
         margin-left: 46px;
         text-transform: uppercase;
-        font: 600 14px sans-serif;
+        font: 600 0.875em sans-serif;
       }
+    }
+    .fa-bars{
+      display: none;
     }
   }
   .creativity {
     margin-top: 154px;
+    .wrapper-470 {
+      img {
+        width: 100%;
+      }
+    }
     .wrapper-600 {
-      margin-left: 100px;
+      margin-left: 9%;
       h2 {
+        font-weight: 300;
         text-transform: uppercase;
-        font-size: 48px;
-        line-height: 66px;
+        font-size: 3em;
+        line-height: 1.333em;
         letter-spacing: 0.04em;
         margin: 0;
       }
       p {
         font-weight: 200;
-        line-height: 32px;
+        line-height: 2em;
         margin: 36px 0;
       }
       a {
-        font-size: 18px;
+        font-size: 1.125em;
         letter-spacing: 0.04em;
         font-weight: 700;
         i {

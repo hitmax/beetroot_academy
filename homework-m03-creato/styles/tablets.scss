@@ -1,0 +1,29 @@
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  #welcome {
+    background-size: cover;
+    header {
+      padding: 30px 0;
+      nav {
+        line-height: 2em;
+        a {
+          margin-left: 20px;
+        }
+      }
+    }
+    .creativity {
+      margin-top: 100px;
+      .wrapper-600 {
+        h2 {
+          font-size: 30px;
+          line-height: 40px;
+        }
+        p{
+          font-size: 0.8em;
+        }
+        a {
+          font-size: 0.875em;
+        }
+      }
+    }
+  }
+}
