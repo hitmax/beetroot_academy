@@ -1,0 +1,29 @@
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  #welcome {
+    background-size: cover;
+  }
+  #welcome header {
+    padding: 30px 0;
+  }
+  #welcome header nav {
+    line-height: 2em;
+  }
+  #welcome header nav a {
+    margin-left: 20px;
+  }
+  #welcome .creativity {
+    margin-top: 100px;
+  }
+  #welcome .creativity .wrapper-600 h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  #welcome .creativity .wrapper-600 p {
+    font-size: 0.8em;
+  }
+  #welcome .creativity .wrapper-600 a {
+    font-size: 0.875em;
+  }
+}
+
+/*# sourceMappingURL=tablets.css.map */
