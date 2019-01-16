@@ -1,0 +1,68 @@
+header {
+  background: #ccc;
+  padding: 20px;
+  height: 20px;
+  nav {
+    width: 70%;
+    margin: 0 auto;
+    min-height: 20px;
+    background: #ccc;
+    position: relative;
+    padding:0 20px 20px;
+    ul {
+      margin: 0;
+      padding: 0;
+      &.visible {
+        display: block;
+      }
+      @media (max-width: 920px) {
+        display: none;
+      }
+      li {
+        display: inline-block;
+        margin-right: 20px;
+        @media (max-width: 920px) {
+          display: block;
+        }
+      }
+    }
+    .hamburger {
+      height: 4px;
+      width: 30px;
+      background: #333;
+      display: none;
+      float: right;
+      position: relative;
+      margin-top: 8px;
+      &.menu-opened {
+        background: none;
+        &:before {
+          transform: rotate(45deg);
+          top: 0;
+        }
+        &:after {
+          transform: rotate(-45deg);
+          bottom: 0;
+        }
+      }
+      @media (max-width: 920px) {
+        display: block;
+      }
+      &:before, &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 30px;
+        background: #333;
+        left: 0;
+      }
+      &:before {
+        top: -8px;
+      }
+      &:after {
+        bottom: -8px;
+      }
+    }
+  }
+}

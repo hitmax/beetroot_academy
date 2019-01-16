@@ -1,0 +1,21 @@
+body {
+  min-height: 9000px;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  background-color: #ba3925;
+  margin: 20px;
+}
+
+a {
+  display: block;
+}
+
+.animated {
+  background-color: #3c7fd4;
+  transition: 2000ms;
+}
+
+/*# sourceMappingURL=main.css.map */
