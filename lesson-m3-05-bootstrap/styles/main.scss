@@ -1,0 +1,26 @@
+@import 'bootstrap/bootstrap-reboot';
+@import 'bootstrap/bootstrap';
+@import 'bootstrap/bootstrap-grid';
+
+.container {
+  background-color: #ccc;
+}
+
+//.container-fluid-md {
+//  @media screen and (min-width: 768px) {
+//    max-width: 100%;
+//  }
+//}
+
+.ba-cell-red {
+  [class^=col] {
+    background-color: brown;
+  }
+}
+
+.ba-cell-bordered {
+  [class^=col] {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+  }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap les1</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+<div class="alert alert-success my-alert" role="alert">
+    A simple success alert—check it out!
+</div>
+
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+    <span class="badge badge-danger">Danger</span>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Library</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Data</li>
+    </ol>
+</nav>
+
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+    <button type="button" class="btn btn-secondary">1</button>
+    <button type="button" class="btn btn-secondary">2</button>
+
+    <div class="btn-group" role="group">
+        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+        </button>
+        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="#">Dropdown link</a>
+            <a class="dropdown-item" href="#">Dropdown link</a>
+        </div>
+    </div>
+</div>
+
+<button type="button" class="btn btn-outline-primary btn-lg">Primary</button>
+<button type="button" class="btn btn-outline-secondary btn-sm">Secondary</button>
+<button type="button" class="btn btn-outline-success">Success</button>
+
+<hr>
+
+<div class="container container-fluid-md">
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl">
+            One of six columns
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl">
+            One of six columns
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl">
+            One of six columns
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl">
+            One of six columns
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl offset-lg-3 offset-xl-0">
+            One of six columns
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl">
+            One of six columns
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<div class="container cell-red">
+    <div class="row justify-content-lg-center">
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl ">
+            One of six columns
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl">
+            One of six columns
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl">
+            One of six columns
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<div class="container ba-cell-bordered">
+    <div class="row justify-content-lg-center">
+        <div class="col-2 ">
+            One of six columns
+        </div>
+        <div class="col-3">
+            One of six columns
+        </div>
+        <div class="col-7">
+            One of six columns
+            <div class="row">
+                <div class="col-3">text</div>
+                <div class="col-3">text</div>
+                <div class="col-3">text</div>
+                <div class="col-3">text</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/jquery-3.3.1.js" defer></script>
+<!--<script src="js/bootstrap/index.js" defer></script>-->
+<script src="js/popper.min.js" defer></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"
+        defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
