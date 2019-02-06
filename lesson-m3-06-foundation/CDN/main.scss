@@ -1,0 +1,14 @@
+@import 'scss/foundation';
+
+// @include foundation-grid;
+@include foundation-flex-classes;
+@include foundation-flex-grid;
+
+.slider-handle {
+  position: relative;
+  input {
+    position: absolute;
+    width: 50px;
+    top: 100%;
+  }
+}

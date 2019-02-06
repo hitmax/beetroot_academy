@@ -12,7 +12,8 @@
 </div>
 
 <div class="alert alert-warning alert-dismissible fade show" role="alert">
-    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+    <strong>Holy guacamole!</strong>
+    You should check in on some of those fields below.
     <span class="badge badge-danger">Danger</span>
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">&times;</span>
@@ -21,8 +22,12 @@
 
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#">Home</a></li>
-        <li class="breadcrumb-item"><a href="#">Library</a></li>
+        <li class="breadcrumb-item">
+            <a href="#">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="#">Library</a>
+        </li>
         <li class="breadcrumb-item active" aria-current="page">Data</li>
     </ol>
 </nav>
@@ -32,7 +37,8 @@
     <button type="button" class="btn btn-secondary">2</button>
 
     <div class="btn-group" role="group">
-        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
             Dropdown
         </button>
         <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
@@ -106,6 +112,63 @@
         </div>
     </div>
 </div>
+
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open
+    modal for @mdo
+</button>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form method="post" action="javascript:void(0);">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Recipient:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Message:</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="reset" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Send message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="ba-popup-bg">
+    <div class="ba-popup-body">
+        <a href="javascript:void(0);" class="ba-popup-close">X</a>
+        <div class="ba-popup-body-content"></div>
+    </div>
+</div>
+
+<a href="javascript:void(0);" class="ba-open-popup">open popup</a>
+<div class="ba-popup-test-content">
+    FIRST Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, sit! <span> wow !</span>
+</div>
+
+<a href="javascript:void(0);" class="ba-open-popup-2">open popup</a>
+<div class="ba-popup-test-content-2">
+    SECOND Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, sit! <span> wow !</span>
+</div>
+
+
 
 
 <script src="js/jquery-3.3.1.js" defer></script>
